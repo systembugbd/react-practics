@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const ComponentC = () => {
-    //Array.from({ length: 40 })
+   
     const [posts, setPosts] = useState([]);
     const [skip, setSkip] = useState(10)
+    
+    //Initial load data 
     useEffect(() => {
         const initialFetch = () => {
             fetch(
@@ -14,9 +16,9 @@ const ComponentC = () => {
                 .then((data) => setPosts(data.posts));
         };
         initialFetch();
-       
     },[]);
    
+    //Fetch data once scroll down to the bottom of page
     const fetchData = async () => {
         const dataSource = await fetch(
             `https://dummyjson.com/posts?limit=10&skip=${skip}&select=title&select=body`
