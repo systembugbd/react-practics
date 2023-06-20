@@ -1,12 +1,13 @@
-import ComponentC from "./components/ComponentC"
- 
+import ComponentC from "./components/ComponentC";
+import Counter from "./components/Counter/Counter";
+
 function App() {
- 
   return (
     <>
-      <ComponentC />
+      <Counter />
+      {/* <ComponentC /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

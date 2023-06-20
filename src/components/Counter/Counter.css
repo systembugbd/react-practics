@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background: #000;
+    color:#fff;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+   
+}
+h1 {
+     padding-bottom: 80px;
+ }
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-top:10rem;  
+}
+.btns{
+    background-color: rgb(55, 55, 55);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color:#fff;
+    font-size:30px;
+    border:0px;
+    cursor: pointer;
+    &:hover{
+        background: #666666;
+    }
+}
+.count{
+    font-size: 100px;
+
+}
