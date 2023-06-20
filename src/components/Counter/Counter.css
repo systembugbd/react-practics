@@ -21,7 +21,7 @@ h1 {
 .buttons{
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 60%;
     padding-top:10rem;  
 }
 .btns{
