@@ -1,10 +1,12 @@
-import ComponentC from "./components/ComponentC";
-import Counter from "./components/Counter/Counter";
+// import ComponentC from "./components/ComponentC";
+// import Counter from "./components/Counter/Counter";
+import Todos from "./components/Todos/Todos";
 
 function App() {
   return (
     <>
-      <Counter />
+      <Todos />
+      {/*<Counter />*/}
       {/* <ComponentC /> */}
     </>
   );

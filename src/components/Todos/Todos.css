@@ -1,0 +1,106 @@
+*{
+      margin:0 auto;
+      padding:0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+}
+body{
+      background: #000;
+      color:#fff;
+      height: 100vh;
+}
+
+.container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width:600px;
+      height: 100vh;
+      padding: 20px;
+}
+.todos{
+      padding:20px 0;
+      margin:20px 0;      
+      width: 100%;
+      background: #383838;
+}
+.inputBox{
+      display: flex;
+      padding: 10px;
+}
+
+.input{
+      padding: 6px;
+      width: 100%; 
+}
+.todolist{
+      padding:10px;
+}
+ul{
+      list-style: none;
+}
+ul li{
+      padding:5px 5px;
+      background: #000;
+      margin:2px 0px;
+      font-size:20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.itemcontent{
+      flex: 1;
+      padding-left:10px;
+      &:hover, ul li{
+            color:#c1c1c1;
+            cursor: pointer;
+          
+      }
+}
+.itemdesc{
+      font-size:10px;
+      padding-right:10px;
+}
+.delete:hover{
+      fill: red;
+      cursor: pointer;
+}
+.noitem{
+      display: felx;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+.icon{
+      cursor: pointer;
+      &:hover{
+            scale:1.2;
+      }
+}
+.icon.checked{
+      fill: green;
+}
+.filter{
+      display: flex;
+      width:100px;
+      justify-content: flex-end;
+    
+}
+.filterchecked{
+      fill: green;
+      background: green;
+      border-radius: 50%;
+}
+
+.filterunchecked{
+      fill: #00d6cc;
+      background: #00d6cc;
+      border-radius: 50%;
+     
+}
+.filterall{
+      fill: rgb(255, 251, 0);
+      background: rgb(255, 251, 0);
+      border-radius: 50%;
+}
